@@ -13,7 +13,7 @@ where = ["src"]
 name = "test_app"
 version = "0.1.0"
 authors = [
-  { name="Hari", email="test.com" },
+  { name="Hari", email="harikarthick289@gmail.com" },
 ]
 description = "A simple streamlit app to explore streamlit deployment"
 dependencies = ["streamlit"]
