@@ -64,8 +64,10 @@ class Login:
                     #     time.sleep(1)
                     # st.rerun()
             # st.page_link("myapp/pages/new_account.py", label="Create New Account")
-            db()
-
+            cur = db()
+            cur.execute('''CREATE TABLE IF NOT EXIST TEST (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT)''')
+            cur.execute('''INSERT INTO TEST(NAME) VALUES(?,)''', ('HELLO'))
+            st.write(cur.execute('''SELECT * FROM TEST'''))
 
 def main():
     """
