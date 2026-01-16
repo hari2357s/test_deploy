@@ -68,7 +68,7 @@ class Login:
             cur.execute("""CREATE TABLE IF NOT EXISTS TEST (
                                   ID INTEGER PRIMARY KEY AUTOINCREMENT,
                                   NAME TEXT )""")
-            cur.execute('''INSERT INTO TEST(NAME) VALUES(?,)''', ('HELLO',))
+            cur.execute('''INSERT INTO TEST(NAME) VALUES(?)''', ('HELLO',))
             st.write(cur.execute('''SELECT * FROM TEST'''))
 
 def main():
