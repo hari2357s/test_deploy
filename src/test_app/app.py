@@ -30,7 +30,7 @@ def main():
     # if StateManager.get_user() is not None and StateManager.get_authenticated():
     # else:
     #     pg = st.navigation(pages, position="top")
-    print(test())
+    st.write(test())
     # pg = st.navigation([st.Page("test_app/pages/login.py", title="Login")], position="top")
     # pg.run()
 
