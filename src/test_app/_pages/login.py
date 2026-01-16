@@ -5,7 +5,7 @@ Docstring for myapp.Pages.login
 import time
 
 import streamlit as st
-
+from test_app.services.test_service import db
 # from myapp.common.constants import (
 #     HTTP_INTERNAL_SERVER_ERROR,
 #     HTTP_OK,
@@ -64,6 +64,7 @@ class Login:
                     #     time.sleep(1)
                     # st.rerun()
             # st.page_link("myapp/pages/new_account.py", label="Create New Account")
+            db()
 
 
 def main():
