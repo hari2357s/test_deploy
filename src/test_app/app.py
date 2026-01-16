@@ -31,18 +31,9 @@ def main():
     # else:
     #     pg = st.navigation(pages, position="top")
     # st.write(test())
-    # pg = st.navigation([st.Page("test_app/pages/login.py", title="Login")], position="top")
-    # pg.run()
+    pg = st.navigation([st.Page("test_app/pages/login.py", title="Login")], position="top")
+    pg.run()
     
-import streamlit as st
-
-st.set_page_config(
-    page_title="",
-    initial_sidebar_state="collapsed"
-)
-
-# Do NOT render UI here
-
 
 
 if __name__ == "__main__":
