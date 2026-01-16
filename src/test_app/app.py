@@ -18,7 +18,7 @@ def main():
     #     container: Container = Container(db)
     #     st.session_state.Container = container
 
-    auth_pages = [st.Page("test_app/pages/home.py", title="Talksy")]
+    # auth_pages = [st.Page("test_app/pages/home.py", title="Talksy")]
 
     pages = [
         st.Page("test_app/pages/login.py", title="Login"),
