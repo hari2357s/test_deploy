@@ -21,7 +21,7 @@ def main():
     auth_pages = [st.Page("test_app/pages/home.py", title="Talksy")]
 
     pages = [
-        st.Page("myapp/pages/login.py", title="Login"),
+        st.Page("test_app/pages/login.py", title="Login"),
         # st.Page("myapp/pages/new_account.py", title="New Account"),
     ]
 
