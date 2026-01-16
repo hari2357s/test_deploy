@@ -3,7 +3,7 @@ Docstring for myapp.App
 """
 
 import streamlit as st
-from test_app.pages.test_pages import test
+# from test_app.pages.test_pages import test
 # from myapp.common.container import Container
 # from myapp.common.database.test_db import Test_Database
 # from myapp.common.state_manager import StateManager
@@ -30,7 +30,7 @@ def main():
     # if StateManager.get_user() is not None and StateManager.get_authenticated():
     # else:
     #     pg = st.navigation(pages, position="top")
-    st.write(test())
+    # st.write(test())
     # pg = st.navigation([st.Page("test_app/pages/login.py", title="Login")], position="top")
     # pg.run()
 
