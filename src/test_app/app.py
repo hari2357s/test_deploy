@@ -21,17 +21,17 @@ def main():
 
     # auth_pages = [st.Page("test_app/pages/home.py", title="Talksy")]
 
-    # pages = [
-    #     st.Page("test_app/pages/login.py", title="Login"),
+    pages = [
+        st.Page("_pages/login.py", title="Login"),
         
-    #     # st.Page("myapp/pages/new_account.py", title="New Account"),
-    # ]
+        st.Page("_pages/new_account.py", title="New Account"),
+    ]
 
     # if StateManager.get_user() is not None and StateManager.get_authenticated():
     # else:
     #     pg = st.navigation(pages, position="top")
     # st.write(test())
-    pg = st.navigation([st.Page("_pages/login.py", title="Login")], position="top")
+    pg = st.navigation(pages, position="top")
     pg.run()
     
 
