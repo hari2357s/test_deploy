@@ -31,7 +31,7 @@ def main():
     # else:
     #     pg = st.navigation(pages, position="top")
     # st.write(test())
-    pg = st.navigation([st.Page("pages/login.py", title="Login")], position="top")
+    pg = st.navigation([st.Page("_pages/login.py", title="Login")], position="top")
     pg.run()
     
 
