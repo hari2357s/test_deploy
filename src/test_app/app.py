@@ -1,7 +1,37 @@
-import streamlit as st
-from test_app.services.test_service import return_hello
-from test_app.common.container import test_container
+"""
+Docstring for myapp.App
+"""
 
-st.header("Hello World!")
-st.write(return_hello())
-st.text(test_container())
+import streamlit as st
+# from myapp.common.container import Container
+# from myapp.common.database.test_db import Test_Database
+# from myapp.common.state_manager import StateManager
+
+
+def main():
+    """
+    Docstring for main
+    """
+
+    # if "Container" not in st.session_state:
+    #     db: Test_Database = Test_Database()
+    #     container: Container = Container(db)
+    #     st.session_state.Container = container
+
+    auth_pages = [st.Page("test_app/pages/home.py", title="Talksy")]
+
+    pages = [
+        st.Page("myapp/pages/login.py", title="Login"),
+        # st.Page("myapp/pages/new_account.py", title="New Account"),
+    ]
+
+    # if StateManager.get_user() is not None and StateManager.get_authenticated():
+    # else:
+    #     pg = st.navigation(pages, position="top")
+
+    pg = st.navigation(pages, position="top")
+    pg.run()
+
+
+if __name__ == "__main__":
+    main()
