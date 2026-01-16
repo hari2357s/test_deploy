@@ -63,7 +63,7 @@ class NewAccountPage:
                     # else:
                     #     toast_warning("Something went wrong!")
 
-            st.page_link("myapp/pages/login.py", label="Already have an Account")
+            st.page_link("_pages/login.py", label="Already have an Account")
 
 
 def main():
