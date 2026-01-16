@@ -5,5 +5,5 @@ def return_hello():
 
 
 def db():
-    conn = sqlite3.connect("test.db")
+    conn = sqlite3.connect("data/test.db")
     return conn.cursor()
