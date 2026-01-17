@@ -9,7 +9,7 @@ import streamlit as st
 # from myapp.common.state_manager import StateManager
 import sys
 
-st.write("sys.path[0] =", sys.path[0])
+st.write("sys.path[0] =", sys.path[0], sys.path)
 
 
 def main():
