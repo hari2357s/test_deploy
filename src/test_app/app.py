@@ -3,7 +3,7 @@ Docstring for myapp.App
 """
 
 import streamlit as st
-# from test_app.pages.test_pages import test
+from test_app.pages.test_pages import test
 # from myapp.common.container import Container
 # from myapp.common.database.test_db import Test_Database
 # from myapp.common.state_manager import StateManager
